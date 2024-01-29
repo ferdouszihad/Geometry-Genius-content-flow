@@ -27,5 +27,46 @@
         </div>
       </nav>
     </header>
+
+    <main class="w-11/12 mx-auto grid grid-cols-12 gap-5">
+      <section
+        id="cards"
+        class="col-span-9 bg-stone-100 grid grid-cols-3 gap-3"
+      >
+        <div class="card bg-base-100 shadow-xl rounded-md">
+          <figure class="px-5 pt-5">
+            <img src="./images/triangle.png" alt="Shoes" class="max-h-40" />
+          </figure>
+          <div class="card-body items-center text-center gap-5">
+            <h2 class="card-title">Triangle</h2>
+            <p>Area(A) = 0.5 x b x h</p>
+
+            <div class="card-form flex gap-5">
+              <div class="input-1">
+                <input
+                  type="text"
+                  id="base"
+                  name="base"
+                  class="input-field w-20 bg-slate-100 p-1 outline-none"
+                />
+                <label for="base">cm </label>
+              </div>
+              <div class="input-2">
+                <input
+                  type="text"
+                  id="base"
+                  name="base"
+                  class="input-field w-20 bg-slate-100 p-1 outline-none"
+                />
+                <label for="base">cm </label>
+              </div>
+            </div>
+
+            <button class="btn btn-primary w-full">Calculate</button>
+          </div>
+        </div>
+      </section>
+      <aside id="result" class="col-span-3 bg-sky-100"></aside>
+    </main>
   </body>
 </html>
